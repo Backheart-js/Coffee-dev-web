@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom class */
+.custom-header__category-item {
+    @apply relative mr-7 text-sm font-medium py-1 cursor-pointer hover:text-gray-700;
+}
+
+.custom-icon {
+    @apply w-5 h-5 mr-2 inline-block;
+}
+
+.custom-circle {
+    /* Bo tròn 1 thẻ div */
+    @apply rounded-full flex justify-center items-center px-2;
+}
+
+#header {
+    height: 80px;
+}
+
+.header__logo-img {
+    width: 112px;
+}
+
+.header__category-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #666;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+.header__category-item:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.header__cart-link:hover {
+    color: #333;
+}
+.header__cart-link:hover > .header__cart-quantity-wrapper {
+    background-color: #e4a237;
+}
