@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Custom class */
 .custom-header__category-item {
-    @apply relative mr-7 text-sm font-medium py-1 cursor-pointer hover:text-gray-700;
+    @apply relative block mr-7 text-sm font-medium py-1 cursor-pointer hover:text-gray-700 text-center;
+}
+.custom-header__category-item-active {
+    @apply text-gray-700 font-bold
+}
+
+.custom-header__category-on-pc {
+    @apply lg:flex lg:relative lg:w-fit lg:justify-around lg:top-0;
 }
 
 .custom-icon {
@@ -16,12 +24,12 @@
     @apply rounded-full flex justify-center items-center px-2;
 }
 
-#header {
-    height: 80px;
-}
-
 .header__logo-img {
     width: 112px;
+}
+
+#header__category {
+    /* top: 80px; */
 }
 
 .header__category-item::before {

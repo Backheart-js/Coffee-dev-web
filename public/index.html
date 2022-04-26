@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Dev</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./imgs/favicon/logo.png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="../src//assets/css/index.css">
 </head>
+
 <body>
     <div id="root">
-        <div id="content-wrapper" class="max-w-screen-2xl text-base mx-auto px-8 ">
-            <section id="header">
-                <div class="header__wrapper flex justify-around max-w-5xl mx-auto items-center h-full">
-                    <a href="#" class="header__logo">
-                        <img src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a4ae4ecdfb2_CoffeeStyle%20Logo.png" 
-                        alt="" 
-                        class="header__logo-img">
-                    </a>
-                    <nav class="header__category flex justify-around text-gray-500 font-medium">
+        <div id="content-wrapper" class="font-Karla max-w-screen-2xl text-base mx-auto">
+            <section class="h-navbar fixed top-0 left-0 right-0 bg-white z-50 ">
+                <div class="header__wrapper relative flex justify-around max-w-5xl mx-auto items-center h-full">
+                    <div class="header__logo-wrap lg:px-8 md:px-4 pl-4 h-full w-4/6 lg:w-fit">
+                        <a href="#" class="header__logo h-full flex items-center">
+                            <img src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a4ae4ecdfb2_CoffeeStyle%20Logo.png"
+                                alt="" class="header__logo-img">
+                        </a>
+                    </div>
+                    <nav id="header__category"
+                        class="hidden absolute w-full top-[80px] z-10 animate-slideDown custom-header__category-on-pc text-gray-500 font-medium bg-white">
                         <a href="" class="header__category-item custom-header__category-item">
                             HOME
                         </a>
@@ -41,8 +48,10 @@
                     </nav>
                     <div class="header__cart">
                         <a href="" class="header__cart-link px-2 py-2 flex items-center text-gray-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="custom-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="custom-icon" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                             </svg>
                             <span class="header__cart-text mr-2 font-medium">CART</span>
                             <div class="header__cart-quantity-wrapper bg-primary-color custom-circle h-6">
@@ -50,15 +59,38 @@
                             </div>
                         </a>
                     </div>
-                    <div class="header__menu-on-mobile hidden">
-
+                    <div id="header__menu-on-mobile" class="lg:hidden cursor-pointer px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="custom-icon" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd" />
+                        </svg>
                     </div>
                 </div>
 
             </section>
-            <section id="main">
-                <div class="main__slider">
+            <section id="main" class="mt-[80px] lg:mx-8">
+                <div class="main__slider h-[530px]">
+                    <div class="main__slider-img relative bg-[url('./imgs/slide.jpg')] h-full bg-cover bg-no-repeat bg-bottom">
+                        <div class="main__slider-content absolute w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-40">
+                            <div class="main__slider-text text-center">
+                                <div class="slider__headline-wrap text-center pb-11">
+                                    <div class="slider__headline-title uppercase text-gray-300 font-semibold">
+                                        Best place to by design
+                                    </div>
+                                    <div class="slider__header-brandname text-white font-semibold text-5xl my-3">
+                                        Coffee Mugs
+                                    </div>
+                                    <p class="slider__headerline-paragraph text-white">
+                                        The most versatile furniture system ever created. Designed to fit your life, made to move and grow.
+                                    </p>
+                                </div>
 
+                                <a href="" class="slider__btn-link uppercase bg-white px-6 py-5 rounded font-medium text-[15px] cursor-pointer hover:bg-gray-100">Explore out products</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main__featured">
 
@@ -77,9 +109,12 @@
                 </div>
             </section>
             <section id="footer">
-                
+
             </section>
         </div>
     </div>
+
+    <script src="../src/assets/javascript/index.js"></script>
 </body>
+
 </html>
