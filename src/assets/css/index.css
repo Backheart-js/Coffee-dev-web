@@ -24,12 +24,13 @@
     @apply rounded-full flex justify-center items-center px-2;
 }
 
-.header__logo-img {
-    width: 112px;
+.custom-subheading {
+    @apply text-sm text-gray-500 uppercase font-medium text-center;
 }
 
-#header__category {
-    /* top: 80px; */
+
+.header__logo-img {
+    width: 112px;
 }
 
 .header__category-item::before {
