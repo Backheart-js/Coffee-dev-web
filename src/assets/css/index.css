@@ -25,9 +25,24 @@
 }
 
 .custom-subheading {
-    @apply text-sm text-gray-500 uppercase font-medium text-center;
+    @apply text-sm text-gray-500 uppercase font-medium text-center mb-24;
 }
 
+.custom-poster__img {
+    @apply relative h-[550px] w-[430px] bg-cover bg-no-repeat bg-center;
+}
+
+.custom-poster__overlay {
+    @apply relative w-full h-full bg-slate-800 opacity-0 transition duration-300 hover:opacity-20;
+}
+
+.custom-poster__label-sales {
+    @apply absolute flex justify-center items-center h-[40px] w-[90px] opacity-100 bg-white text-primary-color-300;
+}
+
+.custom-poster__btn-cart {
+    @apply absolute bottom-3 uppercase bg-white w-11/12 py-4 mx-auto left-0 right-0 rounded font-medium text-[15px] cursor-pointer hover:bg-gray-100
+}
 
 .header__logo-img {
     width: 112px;

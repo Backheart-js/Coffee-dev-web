@@ -554,6 +554,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -635,6 +639,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .items-center{
   align-items: center;
 }
@@ -672,6 +680,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\.\/imgs\/slide\.jpg\'\)\]{
   background-image: url('./imgs/slide.jpg');
+}
+
+.bg-\[url\(\'\.\/imgs\/product\/pd-01\.jpg\'\)\]{
+  background-image: url('./imgs/product/pd-01.jpg');
+}
+
+.bg-\[url\(\'\.\/imgs\/product\/pd-02\.jpg\'\)\]{
+  background-image: url('./imgs/product/pd-02.jpg');
 }
 
 .bg-cover{
@@ -839,6 +855,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .custom-subheading{
+  margin-bottom: 6rem;
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -846,6 +863,71 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.custom-poster__img{
+  position: relative;
+  height: 550px;
+  width: 430px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-poster__overlay{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  opacity: 0;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.custom-poster__overlay:hover{
+  opacity: 0.2;
+}
+
+.custom-poster__label-sales{
+  position: absolute;
+  display: flex;
+  height: 40px;
+  width: 90px;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(216 153 52 / var(--tw-text-opacity));
+  opacity: 1;
+}
+
+.custom-poster__btn-cart{
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.666667%;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.custom-poster__btn-cart:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .header__logo-img {
@@ -917,6 +999,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-7\/12{
     width: 58.333333%;
+  }
+
+  .lg\:w-\[62\%\]{
+    width: 62%;
   }
 
   .lg\:px-8{
