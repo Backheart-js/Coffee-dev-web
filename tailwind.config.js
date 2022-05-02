@@ -23,14 +23,14 @@ module.exports = {
           '0%': { transform: 'translateY(-30%)', 'opacity':'0'},
           '100%': { transform: 'translateY(0%)', 'opacity': '1'},
         }, 
-        slideUp: {
-          '100%': { transform: 'translateY(0%)', 'opacity': '1'},
-          '0%': { transform: 'translateY(-100%)', 'opacity':'0'},
+        fadeIn: {
+          from: {opacity:'0', bottom:'0'},
+          to: {opacity:'1', bottom:'16px'},
         }
       },
       animation: {
         slideDown: 'slideDown .5s ease-in-out',
-        slideUp: 'slideUp .5s ease-in-out',
+        fadeIn: 'fadeIn .3s ease-in-out',
       }
     },
   },

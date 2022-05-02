@@ -68,9 +68,8 @@
                         </svg>
                     </div>
                 </div>
-
             </section>
-            <section id="main" class="mt-[80px] lg:mx-8">
+            <section id="main" class="mt-[80px] lg:mx-8 overflow-hidden">
                 <div class="main__slider h-[530px] mb-24">
                     <div class="main__slider-img relative bg-[url('./imgs/slide.jpg')] h-full bg-cover bg-no-repeat bg-bottom">
                         <div class="main__slider-content absolute w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-40">
@@ -87,11 +86,12 @@
                                     </p>
                                 </div>
 
-                                <a href="" class="slider__btn-link uppercase bg-white px-6 py-5 rounded font-medium text-[15px] cursor-pointer hover:bg-gray-100">Explore out products</a>
+                                <a href="" class="custom-white-btn">Explore out products</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="main__story w-11/12 md:w-4/5 lg:w-7/12 max-w-xl block mx-auto text-center mb-24">
                     <h2 class="main__story-header text-2xl font-medium text-gray-800 my-5">
                         Even the all-powerful Pointing has no control about the blind texts.
@@ -105,41 +105,61 @@
                         </a>
                     </div>
                 </div>
-                <div class="main__featured mb-24">
+                <div class="main__featured mx-6 sm:mx-0 mb-24">
                     <div class="custom-subheading">
                         Features mugs
                     </div>
-                    <div class="main__featured-wrapper lg:w-[62%] mx-auto">
-                        <div class="grid grid-cols-2">
-                            <div class="featured__item-wrap flex justify-center">
-                                <div class="custom-poster__img bg-[url('./imgs/product/pd-01.jpg')]">
+                    <div class="main__featured-wrapper lg:w-[65%] sm:w-[85%] min-h-[90%] mx-auto">
+                        <div class="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-2 gap-4">
+                            <div class="featured__item-wrapper flex justify-center">
+                                <div class="custom-featured__item-wrap w-full">
                                     <a href="" class="poster__link">
-                                        <div class="custom-poster__overlay">
-                                            <div class="custom-poster__label-sales">
-                                                On Sales.
+                                        <div class="custom-poster__img w-full group bg-[url('./imgs/product/pd-01.jpg')]">
+                                            <div class="custom-poster__overlay ">
                                             </div>
-                                            <button class="custom-poster__btn-cart">
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
                                                 Add product to Cart.
                                             </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <a href="" class="featured__item-info"></a>
-                            </div>
-                            <div class="featured__item-wrap flex justify-center">
-                                <div class="custom-poster__img bg-[url('./imgs/product/pd-02.jpg')]">
-                                    <a href="" class="poster__link">
-                                        <div class="custom-poster__overlay">
                                             <div class="custom-poster__label-sales">
                                                 On Sales.
                                             </div>
-                                            <button class="custom-poster__btn-cart">
-
-                                            </button>
+                                        </div>
+                                    </a>
+                                    <a href="" class="featured__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Pink Premium Ceramic</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales"></div>
+                                                <div class="custom-item__info-retail">$ 10.00 USD</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </div>
-                                <a href="" class="featured__item-info"></a>
+                            </div>
+                            <div class="featured__item-wrapper flex justify-center">
+                                <div class="custom-featured__item-wrap w-full">
+                                    <div class="custom-poster__img w-full group bg-[url('./imgs/product/pd-02.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="featured__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Gold design mugs</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales">$ 50.00 USD</div>
+                                                <div class="custom-item__info-retail custom-on-sale">$ 69.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -148,10 +168,264 @@
                     <div class="custom-subheading">
                         MORE PRODUCTS
                     </div>
+
+                    <div class="main__product-wrapper xl:w-[960px] lg:w-[911px] md:w-[80%] mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-03.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Pink Premium Ceramic</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales"></div>
+                                                <div class="custom-item__info-retail">$ 10.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-04.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Gold design mugs</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales">$ 50.00 USD</div>
+                                                <div class="custom-item__info-retail custom-on-sale">$ 69.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-05.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Gold design mugs</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales">$ 50.00 USD</div>
+                                                <div class="custom-item__info-retail custom-on-sale">$ 69.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-06.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Pink Premium Ceramic</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales"></div>
+                                                <div class="custom-item__info-retail">$ 10.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-07.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Gold design mugs</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales">$ 50.00 USD</div>
+                                                <div class="custom-item__info-retail custom-on-sale">$ 69.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-08.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Gold design mugs</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales">$ 50.00 USD</div>
+                                                <div class="custom-item__info-retail custom-on-sale">$ 69.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-09.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Pink Premium Ceramic</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales"></div>
+                                                <div class="custom-item__info-retail">$ 10.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-10.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Gold design mugs</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales">$ 50.00 USD</div>
+                                                <div class="custom-item__info-retail custom-on-sale">$ 69.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__item-wrapper flex justify-center mb-8 md:mb-10">
+                                <div class="custom-product__item-wrap">
+                                    <div class="custom-poster__img group h-[380px] w-[300px] bg-[url('./imgs/product/pd-11.jpg')]">
+                                        <a href="" class="poster__link">
+                                            <div class="custom-poster__overlay ">
+                                            </div>
+                                            <button class="custom-poster__btn-cart hidden group-hover:block group-hover:animate-fadeIn">
+                                                Add product to Cart.
+                                            </button>
+                                            <div class="custom-poster__label-sales">
+                                                On Sales.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="" class="product__item-info">
+                                        <div class="custom-item__info">
+                                            <div class="custom-item__info-title py-1">Gold design mugs</div>
+                                            <div class="custom-item__info-price py-2">
+                                                <div class="custom-item__info-sales">$ 50.00 USD</div>
+                                                <div class="custom-item__info-retail custom-on-sale">$ 69.00 USD</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="main__shopping mb-24">
+                <div class="main__shopping mb-24 mx-6 ">
                     <div class="custom-subheading">
                         BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE
+                    </div>
+
+                    <div class="main__shopping-wrapper lg:w-[900px] md:w-[90%] mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 g gap-20">
+                            <div class="main__shopping-container">
+                                <div class="grid grid-cols-3 grid-rows-2 gap-4">
+                                    <div class="bg-[url('./imgs/product/shopping-1.jpg')] bg-cover bg-no-repeat bg-center pt-[100%] col-span-2 row-span-2"></div>
+                                    <div class="bg-[url('./imgs/product/shopping-2.jpg')] bg-cover bg-no-repeat bg-center pt-[100%] col-start-3"></div>
+                                    <div class="bg-[url('./imgs/product/shopping-3.jpg')] bg-cover bg-no-repeat bg-center pt-[100%] col-start-3"></div>
+                                </div>
+                            </div>
+                            <div class="main__shopping-container text-center lg:text-left">
+                                <div class="text-sm text-gray-500 uppercase font-medium mb-5">
+                                    PREMIUM OFFER
+                                </div>
+                                <div class="shopping__content-title text-4xl font-normal my-4 text-gray-800">
+                                    Get our Coffee Magazine
+                                </div>
+                                <h5 class="text-gray-500 mb-11">
+                                    The most versatile furniture system ever created. Designed to fit your life.
+                                </h5>
+                                <a href="" class="custom-dark-btn">Start shopping</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="main__story mb-24">
